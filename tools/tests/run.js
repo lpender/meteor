@@ -22,8 +22,6 @@ selftest.define("run", function () {
   var s = new Sandbox({ fakeMongo: true });
   var run;
 
-  s.set("METEOR_WATCH_PRIORITIZE_CHANGED", "false");
-
   // Starting a run
   s.createApp("myapp", "standard-app");
   s.cd("myapp");
